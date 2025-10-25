@@ -36,7 +36,20 @@ public class CityList {
      * @return boolen
      * Return true or false
      */
-    public  boolean HasCity(City city){
+    public  boolean hasCity(City city){
         return cities.contains((city));
+    }
+
+    public void removeCity(City city){
+        if (cities.contains(city)){
+            cities.remove(city);
+        }
+        else {
+            throw new IllegalArgumentException("city not in list");
+        }
+    }
+
+    public int city_num(){
+        return cities.size();
     }
 }
