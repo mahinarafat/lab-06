@@ -40,6 +40,11 @@ public class CityList {
         return cities.contains((city));
     }
 
+    /**
+     * This removes city if in list, throws exception if not
+     * @param City
+     * @return None
+     */
     public void removeCity(City city){
         if (cities.contains(city)){
             cities.remove(city);
@@ -49,6 +54,10 @@ public class CityList {
         }
     }
 
+    /**
+     * This counts cities in list
+     * @return city number
+     */
     public int city_num(){
         return cities.size();
     }
